@@ -1,6 +1,0 @@
-document.write('<a target=\"_blank\" href=\"http://ad.metanetwork.com/clk?2,13%3B5a2d1359f0ab0c16%3B130aa97ac47,0%3B%3B%3B347969681,glSAABNvHQBJr28AAAAAAIeHGgAAAAAAAAAUAAIAAAAAAAAAAgACCL0dMAAAAAAAmSQHAAAAAAAvRyMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdLxIAAAAAAAIAAwAAAAAA.auXqjABAAAAAAAAAGQ4MmZiM2Q0LTlhZDktMTFlMC04OWJkLWJiMGRjMGUyMDk1MgAAAAAAAAA=,,http%3A%2F%2Fad.metanetwork.com%2Fst%3Fad_type%3Diframe%26ad_size%3D300x250%26section%3D1928979,\"><img border=\"0\" alt=\"\" height=\"250\" width=\"300\" src=\"http://content.yieldmanager.edgesuite.net/atoms/49/b8/63/e8/49b863e8019a8054d4c6be6fd8c50933.gif\"></img></a><img src=\"http://t.adbuyer.com/imp?cr=7319369&bl=2311983&sl=468121&se=1928979&si=&pu=474535&v=8410242&so=http%3A%2F%2Fad%2Emetanetwork%2Ecom%2Fst%3Fad%5Ftype%3Diframe%26ad%5Fsize%3D300x250%26section%3D1928979&prc=0.0000&ci=Dhaka&c1=3002\" height=\"1\" width=\"1\" alt=\"\">');
-var rm_data = new Object();
-rm_data.creative_id = 7319369;
-rm_data.offer_type = 9;
-rm_data.entity_id = 222300;
-if (window.rm_crex_data) {rm_crex_data.push(7319369);}
