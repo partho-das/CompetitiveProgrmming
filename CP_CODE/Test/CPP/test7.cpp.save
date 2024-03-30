@@ -1,0 +1,49 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int sumofall(const int arr[])
+{
+    int sum = 0;
+    int size = sizeof(arr) / sizeof (arr[0]);
+    for(int i = 0; i< size;i++)
+    {
+
+     cout << sizeof(arr) << endl;
+    // siz
+    }
+    return sum;
+}
+
+int main()
+{
+
+//    freopen("C:\\Users\\parth\\Desktop\\input.txt","r",stdin);
+//    freopen("C:\\Users\\parth\\Desktop\\output.txt","w",stdout);
+
+    int arr[1] ;
+
+
+   vector<long long> v();
+   cout << sizeof(v) << endl;
+   v.push_back(5);
+   cout << sizeof(v) << endl;
+    v.push_back(5);
+   cout << sizeof(v) << endl;
+    v.push_back(5);
+   cout << sizeof(v) << endl;
+
+   // int sum = sumofall(arr);
+
+
+   // cout << sum << endl;
+
+
+
+
+
+
+
+
+    return 0;
+}

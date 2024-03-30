@@ -1,0 +1,51 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+struct room
+{
+    int cost;
+    int have;
+    float ratio;
+}rm[1020];
+
+int main()
+{
+
+    while(1)
+    {
+        int m,n;
+
+        cin >> m >> n;
+
+        for(int i = 0;i<n;i++)
+        {
+            scanf("%d%d",&rm[i].cost,&rm[i].have);
+            rm[i].ratio = rm[i].cost/(float)rm[i].have;
+        }
+
+        for(int i = 0;i<n-1;i++)
+        {
+            for(int j = i+1;j<n;j++)
+            {
+                if(rm[i].ratio<rm[j].ratio)
+                {
+                    swap(rm[i],rm[j]);
+                }
+            }
+        }
+        float can = 0;
+        for(int i = 0;i<n;i++)
+        {
+            can+= min(m,rm[i].have)*rm[i].ratio;
+            m = m - min(m,rm[i].have);
+            //cout << rm[i].cost <<" "<< rm[i].have  << " "<< rm[i].ratio << endl << can << endl;
+        }
+        printf("%.3f\n",can);
+
+
+
+    }
+
+    return 0;
+}

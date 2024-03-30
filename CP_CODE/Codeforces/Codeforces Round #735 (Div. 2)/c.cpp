@@ -1,0 +1,130 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+//____________________________________________________________________________________________________________________________________
+#define PI  2*acos(0.0)
+#define pf  printf
+#define sc  scanf
+#define ff  first
+#define ss  second
+#define pb  push_back
+typedef long long ll;
+typedef unsigned long long ull;
+typedef std::vector<int> vi;
+typedef vector<long long> vll;
+typedef pair<int, int> pii;
+typedef pair<ll, ll> pll;
+#define sc1(n)         sc("%d",&n)
+#define sc2(n, m)      sc("%d%d", &n, &m)
+#define sc3(m, n, o)   sc("%d%d%d", &m, &n, &o)
+#define scl(n)         sc("%lld", &n)
+#define scll(n, m)     sc("%lld%lld", &n, &m)
+#define sclll(n, m, o) sc("%lld%lld%lld", &n, &m, &o)
+#define scf(f)         sc("%lf",&f);
+#define pn(n)          pf("%d\n", n);
+#define FOR(i,a,n)   for( int i = a; i < n; i++)
+#define all(x) (x).begin(), (x).end()
+#define FastIO ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
+const ll INF = 0x3f3f3f3f3f3f3f3f;
+const int inf = 0x3f3f3f3f;
+const int MOD =  1e9 + 7;
+const long double EPS = 1e-9;
+template <class T> inline T gcd(T a,T b){if(b==0)return a;return gcd(b,a%b);}
+template <class T> inline double my_sqrt(T n) { double high = n + 5, low = 0, mid, ans; int cnt = 100; while(cnt--) { mid = low + (high - low) / 2; if(mid * mid <= n) ans = mid, low = mid; else high = mid; } return ans; }
+template <class T> inline T bigmod(T b, T p){ if(p <= 0 || b == 0) return 1; ll x = b; if(p & 1) return (x * bigmod(b, p - 1)) % MOD; x = bigmod(b, p >> 1); return (x * x) % MOD;}
+#ifdef PARTHO
+#define dbg(x) cout << __LINE__ << " says: " << #x << " = " << x << "\n"
+#else
+#define dbg(x)
+#endif
+//____________________________________________________________________________________________________________________________________
+
+bool ckbit(int i, ll value){
+	return (1ll << i) & value;
+}
+void solve(){
+    
+    ll n, m;
+
+    scll(n, m);
+
+
+    if(m < n){
+    	puts("0");
+    	return;
+    }
+    else{
+    	int ck = 0;
+    	for(ll i = 0; i <= 29; i++){
+    		if(1ll << i > m) break;
+    		if( (ckbit(i, n) == 0 && ckbit(i, m) == 0) ||  
+    			 (ckbit(i, n) == 1 && ckbit(i, m) == 0) ) ck = 1; 
+    	}
+    	if(!ck){
+    		cout << m + 1 << endl;
+    		return;
+    	}
+    	ll res = 0, indx = -1;
+    	for(ll i = 29; i >= 0; i--){
+    		if(1ll << i > m) continue;
+
+    	//cout << i << endl;
+    		//cout << ckbit(i, m) << " " << ckbit(i, n) << endl;
+    		if(ckbit(i, n) == 0 && ckbit(i, m) == 0){
+    			int ck = 0;
+    			for(int j = i - 1; j >= 0; j--){
+    				if( (ckbit(j, n) == 0 && ckbit(j, m) == 0) ||  
+    			 (ckbit(j, n) == 1 && ckbit(j, m) == 0) ) ck = 1; 
+    			}
+    			//cout << " ck " << ck << endl;
+    			if(!ck) {
+    				res = res | (1ll << i);
+    				break;		
+    			}
+    		}
+    		else if(ckbit(i, m) == 0 && ckbit(i, n) == 1){
+    			//cout << i << endl;
+    			break;
+    		}
+    		else if(ckbit(i, m) == 1 && ckbit(i, n) == 0){
+    			res = res | (1ll << i);
+    		}
+    		//cout << (1 << i) << " " << res  << endl;
+    		
+    	}
+    	printf("%lld\n", res);
+
+
+    }
+
+
+    return;
+}
+
+
+
+int main() {
+    #ifdef PARTHO
+        freopen("/mnt/Stable/Dropbox/IO/input.txt","r",stdin);
+        freopen("/mnt/Stable/Dropbox/IO/output.txt","w",stdout);
+        int start_time = clock();
+    #endif
+    //FastIO;ASS
+
+    int test = 1;
+
+    sc1(test);
+
+    while(test--){
+        solve();
+    }
+    #ifdef PARTHO
+        int end_time = clock();
+        printf("Time = %.4f\n",(end_time-start_time+0.0)/CLOCKS_PER_SEC);
+    #endif
+
+    return 0;
+}
+///Before submit=>
+///    *check for integer overflow,array bounds
+///    *check for n=1

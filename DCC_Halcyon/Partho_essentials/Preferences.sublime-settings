@@ -1,0 +1,11 @@
+{
+	"font_size": 13,
+	"theme": "auto",
+	"color_scheme": "Packages/Colorsublime - Themes/Monokai.tmTheme",
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"dark_theme": "Default Dark.sublime-theme",
+	"light_theme": "Default.sublime-theme",
+}

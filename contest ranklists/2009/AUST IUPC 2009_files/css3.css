@@ -1,0 +1,60 @@
+BODY {
+	BACKGROUND: #ffffff; COLOR: #000000
+}
+#noPrint {
+	DISPLAY: none
+}
+#leftPrint {
+	COLOR: #000000; TEXT-ALIGN: left
+}
+notes {
+	COLOR: #000000; TEXT-ALIGN: left
+}
+A.notes {
+	COLOR: #000000; TEXT-ALIGN: left
+}
+#leftPrint A {
+	COLOR: #000000; TEXT-ALIGN: left
+}
+#leftPrint A.notes {
+	COLOR: #000000; TEXT-ALIGN: left
+}
+#contentPrint {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000; FLOAT: none; FONT-FAMILY: "Times New Roman", Times, serif
+}
+#contentPrint A {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000; FLOAT: none; FONT-FAMILY: "Times New Roman", Times, serif
+}
+#contentPrint H1 {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000; FLOAT: none; FONT-FAMILY: "Times New Roman", Times, serif
+}
+#contentPrint H2 {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000; FLOAT: none; FONT-FAMILY: "Times New Roman", Times, serif
+}
+#contentPrint H3 {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000; FLOAT: none; FONT-FAMILY: "Times New Roman", Times, serif
+}
+#contentPrint H4 {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000; FLOAT: none; FONT-FAMILY: "Times New Roman", Times, serif
+}
+#contentPrint H5 {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000; FLOAT: none; FONT-FAMILY: "Times New Roman", Times, serif
+}
+#contentPrint H6 {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000; FLOAT: none; FONT-FAMILY: "Times New Roman", Times, serif
+}
+#contentPrint TD {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000; FLOAT: none; FONT-FAMILY: "Times New Roman", Times, serif
+}
+#contentPrint TH {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000; FLOAT: none; FONT-FAMILY: "Times New Roman", Times, serif
+}
+.textNormal#contentPrint {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000; FLOAT: none; FONT-FAMILY: "Times New Roman", Times, serif
+}
+#contentPrint P {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000; FLOAT: none; FONT-FAMILY: "Times New Roman", Times, serif
+}
+#contentPrint LI {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000; FLOAT: none; FONT-FAMILY: "Times New Roman", Times, serif
+}

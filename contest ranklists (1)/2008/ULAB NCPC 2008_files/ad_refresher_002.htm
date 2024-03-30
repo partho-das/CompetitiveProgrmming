@@ -1,0 +1,56 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="ad_refresher_data/google_service.js"></script>
+    <script type="text/javascript">
+      GS_googleAddAdSenseService("ca-pub-7291399211842501");
+      GS_googleEnableAllServices();
+    </script><script src="ULAB%20NCPC%202008_files/google_ads_002.js"></script>
+    <script type="text/javascript">
+      params = {};
+      var parts = window.location.href.match(/[#&]([^&#=]+)=([^&#=]+)/g);
+      for (var part = 0; part < parts.length; part++) {
+        var keyval = parts[part].substr(1).split('=');
+        params[keyval[0]] = unescape(keyval[1]);
+      }
+
+      params['skip'] = parseInt(params['skip']) || 0;
+
+      if (params['ad_unit']) {
+        if (params['attributes']) {
+          var attrs = params['attributes'].split('&');
+          for (var i = 0; i < attrs.length; i++) {
+            var keyval = attrs[i].split('=');
+            GA_googleAddAttr(unescape(keyval[0]), unescape(keyval[1]));
+          }
+        }
+
+        GA_googleAddSlot("ca-pub-7291399211842501", params['ad_unit']);
+
+        GA_googleAddAttr('Skip', params['skip']);
+        GA_googleAddAdSenseSlotAttr(params['ad_unit'], "google_skip", params['skip']);
+
+        if (params['url'])
+          GA_googleAddAdSenseSlotAttr(params['ad_unit'], "google_page_url", params['url']);
+      }
+    </script>
+    <script type="text/javascript">
+      GA_googleFetchAds();
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      if (params['ad_unit'])
+        GA_googleFillSlot(params['ad_unit']);
+    </script><script src="ad_refresher_data_002/ads"></script><div id="google_ads_div_Doc_Sideboard_MediumRectangle_BTF_300x250_ad_container"><script type="text/javascript">
+admeld_publisher  = 730;
+admeld_site       = 'scribd';
+admeld_size       = '300x250';
+admeld_placement   = 'latam_reader_btf';
+</script>
+<script type="text/javascript" src="ULAB%20NCPC%202008_files/meld128_002.js"></script><script type="text/javascript" src="ad_refresher_data_002/latam_reader_btf"></script><div style="width:300px,height:250px;margin:0;border:0"><!-- BEGIN STANDARD TAG - 300 x 250 - Asia : Run-of-site  - Do not Modify --><iframe marginwidth="0" marginheight="0" src="latam_reader_atf_data/st.htm" scrolling="NO" width="300" frameborder="0" height="250"></iframe><!-- END TAG --></div>
+
+</div>
+
+  
+
+</body></html>
