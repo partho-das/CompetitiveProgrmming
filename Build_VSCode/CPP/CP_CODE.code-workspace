@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"path": "/home/partho/Desktop/Code/GitDir/CompetitiveProgrmming/CP_CODE"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.tcc": "cpp",
+			"chrono": "cpp",
+			"vector": "cpp",
+			"functional": "cpp",
+			"random": "cpp",
+			"format": "cpp",
+			"memory_resource": "cpp",
+			"regex": "cpp",
+			"iostream": "cpp"
+		}
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			
+
+		]
+	}
+}
